@@ -13,8 +13,8 @@ body {
   font-size: var(--base-fs);
 }
 
-// =======
-// queries
+/* ======= */
+/* queries */
 
 @media (min-width: var(--screen-mobile)) {
 }
