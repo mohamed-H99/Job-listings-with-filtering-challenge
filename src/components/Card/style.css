@@ -1,0 +1,26 @@
+.card-img {
+  transform: translateY(-50%);
+}
+
+.card-content-info span {
+  font-size: 90%;
+}
+
+.card-content-info span:after {
+  display: inline-block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 1);
+  margin: 0 0.5rem;
+}
+.card-content-info span:last-child:after {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .card-img {
+    transform: none;
+  }
+}

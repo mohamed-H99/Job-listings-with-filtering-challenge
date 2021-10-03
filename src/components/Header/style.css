@@ -1,0 +1,26 @@
+.header {
+  background-image: url("../../assets/img/bg-header-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.filter {
+  max-height: 0px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s ease;
+}
+
+.filter.active {
+  max-height: 500px;
+  opacity: 1;
+  pointer-events: auto;
+  /* transition: all 1s ease; */
+}
+
+@media (min-width: 640px) {
+  .header {
+    background-image: url("../../assets/img/bg-header-desktop.svg");
+  }
+}
