@@ -12,11 +12,16 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 1);
+  background: #2c3a3a;
   margin: 0 0.5rem;
 }
 .card-content-info span:last-child:after {
   display: none;
+}
+
+.card-tag:hover {
+  transform: scale(1.15);
+  transition: transform 0.15s;
 }
 
 @media (min-width: 640px) {

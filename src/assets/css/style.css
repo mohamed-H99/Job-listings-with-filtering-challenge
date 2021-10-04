@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
 
 :root {
-  /* --screen-mobile: 375px;
-  --screen-desktop: 1440px; */
-
   --base-fs: 15px;
   --base-ff: "Spartan", sans-serif;
 }
@@ -16,4 +13,5 @@ body {
 .container {
   margin: 0 auto;
   width: calc(100% - 2rem);
+  max-width: 900px;
 }
