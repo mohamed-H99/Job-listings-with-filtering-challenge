@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Scroll from "react-scroll";
 import Header from "./components/Header";
 import Card from "./components/Card";
 import "./assets/css/style.css";
@@ -14,6 +15,14 @@ function App() {
       level: "",
     },
   });
+
+  const scrollToTop = () => {
+    const scroll = Scroll.animateScroll;
+
+    scroll.scrollToTop({
+      // options
+    });
+  };
 
   const handleUpdateJobs = () => {
     const { tools, languages, role, level } = { ...state.filterBy };
@@ -34,7 +43,8 @@ function App() {
     }
 
     setState((prev) => ({ ...prev, jobs: newJobs }));
-    window?.scrollTo(0, 0);
+
+    scrollToTop();
   };
 
   const handleAddFilter = ({ type, value }) => {
@@ -148,7 +158,6 @@ function App() {
   };
 
   useEffect(() => {
-    console.log('Updating!');
     handleUpdateJobs();
     return () => {};
   }, [state.filterBy]);

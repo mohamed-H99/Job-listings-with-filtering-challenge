@@ -6,7 +6,7 @@ export default function Card({ data, onAddFilter }) {
 
   return (
     <div
-      className={`card border-l-4 border-transparent rounded bg-white shadow-xl ${
+      className={`card border-l-4 transition-all border-transparent rounded bg-white shadow-xl hover:shadow-md ${
         data.new ? "border-cyan-dark" : ""
       }`}
     >
